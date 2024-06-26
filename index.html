@@ -1,120 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Metadata and links to external resources -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Link to Google Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- The body section contains the content of the page -->
+  <body>
+    <!-- Header section containing the navigation bar -->
+    <header>
+      <nav>
+        <a href="#" class="menu-item">Gmail</a>
+        <a href="#" class="menu-item">Images</a>
+        <div id="dropdown-wrapper">
+          <!-- Dropdown menu for Google apps -->
+          <i id="dropdown-menu" class="material-icons">apps</i>
+          <!-- Icon representing the dropdown menu -->
+          <div id="dropdown-app">
+            <div class="app-item">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/281/281764.png"
+                alt="Google Search"
+              />
+              <p>Search</p>
+            </div>
 
-  <title>Google_Resign</title>
-  <link rel="stylesheet" href="./Css/index.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
+            <div class="app-item">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Google_Maps_icon_%282015-2020%29.svg/768px-Google_Maps_icon_%282015-2020%29.svg.png?20200220195824"
+                alt="Maps"
+              />
+              <p>Maps</p>
+            </div>
+            <div class="app-item">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/768px-Google_Drive_icon_%282020%29.svg.png"
+                alt="Drive"
+              />
+              <p>Drive</p>
+            </div>
 
-<body>
-  <header>
-    <nav>
-      <a href="https://mail.google.com/mail/&ogbl" class="menu-item">Gmail</a>
-      <a href="https://www.google.com.ng/imghp?hl=en&ogbl" class="menu-item">Images</a>
-      <div id="dropdown-wrapper">
-        <i id="dropdown-menu" class="material-icons">apps</i>
-        <div id="dropdown-app">
+            <div class="app-item">
+              <img
+                src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv7_x2VjrvCLmq-txCGJcnpCCV_WnUnktXnQ&usqp=CAU"
+                alt="Calendar"
+              />
+              <p>Calendar</p>
+            </div>
 
-          <div class="app-item">
-            <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google Search">
-            <p>
-              Search
-            </p>
-          </div>
+            <div class="app-item">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Google_Photos_icon_%282015-2020%29.svg/768px-Google_Photos_icon_%282015-2020%29.svg.png"
+                alt="Google photos"
+              />
+              <p>Photos</p>
+            </div>
 
-          <div class="app-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Google_Maps_icon_%282015-2020%29.svg/768px-Google_Maps_icon_%282015-2020%29.svg.png?20200220195824"
-              alt="Maps">
-            <p>
-              Maps
-            </p>
-          </div>
-          <div class="app-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/768px-Google_Drive_icon_%282020%29.svg.png"
-              alt="Drive">
-            <p>
-              Drive
-            </p>
-          </div>
-
-          <div class="app-item">
-            <img
-              src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv7_x2VjrvCLmq-txCGJcnpCCV_WnUnktXnQ&usqp=CAU"
-              alt="Calendar">
-            <p>
-              Calendar
-            </p>
-          </div>
-
-          <div class="app-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Google_Photos_icon_%282015-2020%29.svg/768px-Google_Photos_icon_%282015-2020%29.svg.png"
-              alt="Google photos">
-            <p>
-              Photos
-            </p>
-          </div>
-
-          <div class="app-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Keep_icon_%282015-2020%29.svg/768px-Google_Keep_icon_%282015-2020%29.svg.png?20210606170001"
-              alt="google keeps">
-            <p>
-              Keeps
-            </p>
+            <div class="app-item">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Keep_icon_%282015-2020%29.svg/768px-Google_Keep_icon_%282015-2020%29.svg.png?20210606170001"
+                alt="google keeps"
+              />
+              <p>Keeps</p>
+            </div>
           </div>
         </div>
-      </div>
-      <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/">
-        <img src="./img/profilepic.png" alt="Profile pic" id="profile-pic">
-      </a>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        alt="google-center-logo" id="google-logo"><br />
-      <div id="input-wrapper">
-        <input type="search" name="search-box" id="search-box">
-        <div class="mic-img">
-          <img src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" alt="google-mic"
-            id="google-search-mic">
-          <img src="./img/download.svg" alt="google-img">
+        <a
+          href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/"
+        >
+          <!--  profile picture -->
+          <img
+            src="./assets/img/profilepic.png"
+            alt="Profile pic"
+            id="profile-pic"
+          />
+        </a>
+      </nav>
+    </header>
+
+    <!-- Main section containing the search interface  -->
+    <main>
+      <section>
+        <!-- Google logo and search box -->
+        <img
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+          alt="google-center-logo"
+          id="google-logo"
+        /><br />
+        <div id="input-wrapper">
+          <input type="search" name="search-box" id="search-box" />
+          <div class="mic-img">
+            <img
+              src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"
+              alt="google-mic"
+              id="google-search-mic"
+            />
+            <img src="./assets/img/download.svg" alt="google-img" />
+          </div>
         </div>
-      </div>
-      <div>
-        <button class="custom-btn">Google Search</button>
-        <button class="custom-btn">I'm feeling lucky</button>
-      </div>
-    </section>
-    <article>
-      <div class="offers">Google offered in:</div>&nbsp;
-      <a href="https://www.google.com/setprefs?sig=0_ZSo_EuL3j3N-4YB7QzjSdq-JShg%3D&hl=ha&source=homepage&sa=X&ved=0ahUKEwijiJ3f0cT8AhXPQaQEHRlHDg4Q2ZgBCBM"
-        target="_blank" rel="noopener noreferrer">
-        Hausa
-      </a>&nbsp;&nbsp;
-      <a href="https://www.google.com/setprefs?sig=0_ZSo_EuL3j3N-4YB7QzjSdq-JShg%3D&hl=ig&source=homepage&sa=X&ved=0ahUKEwijiJ3f0cT8AhXPQaQEHRlHDg4Q2ZgBCBQ"
-        target="_blank" rel="noopener noreferrer">
-        Igbo
-      </a>&nbsp;&nbsp;
-      <a href="https://www.google.com/setprefs?sig=0_ZSo_EuL3j3N-4YB7QzjSdq-JShg%3D&hl=yo&source=homepage&sa=X&ved=0ahUKEwijiJ3f0cT8AhXPQaQEHRlHDg4Q2ZgBCBU"
-        target="_blank" rel="noopener noreferrer">
-        Èdè Yorùbá
-      </a>&nbsp;&nbsp;
-      <a href="https://www.google.com/setprefs?sig=0_ZSo_EuL3j3N-4YB7QzjSdq-JShg%3D&hl=pcm&source=homepage&sa=X&ved=0ahUKEwijiJ3f0cT8AhXPQaQEHRlHDg4Q2ZgBCBY"
-        target="_blank" rel="noopener noreferrer">
-        Nigerian Pidgin
-      </a>
-    </article>
-  </main>
+        <div>
+          <button class="custom-btn">Google Search</button>
+          <button class="custom-btn">I'm feeling lucky</button>
+        </div>
+      </section>
 
-</body>
-
+      <!-- Language options section -->
+      <article>
+        <div class="offers">Google offered in:</div>
+        &nbsp;
+        <a href="#" target="_blank" rel="noopener noreferrer"> Hausa </a
+        >&nbsp;&nbsp;
+        <a href="#" target="_blank" rel="noopener noreferrer"> Igbo </a
+        >&nbsp;&nbsp;
+        <a href="#" target="_blank" rel="noopener noreferrer"> Èdè Yorùbá </a
+        >&nbsp;&nbsp;
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          Nigerian Pidgin
+        </a>
+      </article>
+    </main>
+  </body>
 </html>

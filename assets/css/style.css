@@ -1,16 +1,18 @@
+/* Resets margin and padding for all elements to 0 and sets box-sizing to border-box */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Sets default font family, body width, and padding */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 14px 18px 18px;
-  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   max-width: 100%;
+  padding: 14px 18px 18px;
 }
 
+/* Styles navigation bar as a flex container, aligning items to the right */
 nav {
   display: flex;
   flex-direction: row;
@@ -18,6 +20,7 @@ nav {
   align-items: center;
 }
 
+/* Styles individual menu items */
 .menu-item {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.87);
@@ -25,20 +28,24 @@ nav {
   margin-right: 20px;
 }
 
+/* Underlines menu item on hover */
 .menu-item:hover {
   text-decoration: underline;
 }
 
+/* Styles the dropdown wrapper as an inline-block element */
+#dropdown-wrapper {
+  display: inline-block;
+}
+
+/* Styles the dropdown menu icon */
 #dropdown-menu {
   height: 24px;
   max-width: 24px;
   margin-right: 20px;
 }
 
-#dropdown-wrapper {
-  display: inline-block;
-}
-
+/* Styles the dropdown app container and hides it initially */
 #dropdown-app {
   max-width: 285px;
   padding: 28px;
@@ -50,11 +57,13 @@ nav {
   display: none;
 }
 
+/* Displays dropdown app as a grid when hovered over */
 #dropdown-wrapper:hover #dropdown-app {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
+/* Styles individual app items */
 .app-item {
   display: flex;
   flex-direction: column;
@@ -65,36 +74,59 @@ nav {
   padding: 8px;
 }
 
+/* Sets dimensions for images within app items */
 .app-item img {
   width: 50px;
   height: 50px;
 }
 
+/* Adds border and rounded corners to app items on hover */
 .app-item:hover {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
+/* Sets text color for paragraphs within app items */
 .app-item p {
   color: rgba(0, 0, 0, 0.87);
 }
 
+/* Styles the profile picture with rounded edges and fixed dimensions */
 #profile-pic {
   border-radius: 50px;
   height: 32px;
   max-width: 32px;
 }
 
+/* Styles the main container to fill the viewport height and center its content */
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles sections as flex containers with centered content */
 section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 62px;
 }
 
+/* Sets specific dimensions for the Google logo */
+#google-logo {
+  width: 272px;
+  height: 92px;
+}
+
+/* Styles the input wrapper with dimensions, flex properties, border, margin, rounded corners, and padding */
 #input-wrapper {
-  width: 618px;
+  width: 561px;
+  max-width: 561px;
+  height: 44px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -105,46 +137,48 @@ section {
   padding: 8px;
 }
 
+/* Adds a shadow and removes border color when the input wrapper is hovered over */
 #input-wrapper:hover {
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   border-color: rgba(223, 225, 229, 0);
 }
 
+/* Adds a shadow and removes border color when the input wrapper is focused */
 #input-wrapper:focus {
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   border-color: rgba(223, 225, 229, 0);
 }
 
+/* Styles the search box with full width and height, text color, no border, specific font size, and no outline */
 #search-box {
-  width: 85%;
+  width: 100%;
+  height: 100%;
   color: #222;
   border: none;
   font-size: 13px;
   outline: none;
-
 }
 
+/* Styles the mic image container within the input wrapper with a left border and flex properties */
 #input-wrapper .mic-img {
   border-left: 1px solid #dfe1e5;
+  display: flex;
+  flex-direction: row;
 }
 
+/* Sets dimensions and margin for the mic image within the input wrapper */
 #input-wrapper .mic-img img {
   height: 24px;
   max-width: 24px;
+  margin: 0 8px;
 }
 
-#input-wrapper .mic-img img:nth-child(1) {
-  margin-left: 8px;
+/* Adds margin to custom buttons */
+.custom-btn {
+  margin: 8px;
 }
 
-#input-wrapper .mic-img img:nth-child(2) {
-  margin-left: 12px;
-}
-
-.custom-btn:nth-of-type(1) {
-  margin-right: 18px;
-}
-
+/* Styles buttons with background color, text color, font size, dimensions, padding, gradient background, border, shadow, and bottom margin */
 button {
   background-color: #f2f2f2;
   color: #5f6368;
@@ -158,6 +192,7 @@ button {
   margin-bottom: 8px;
 }
 
+/* Changes background gradient, border, and shadow on button hover */
 button:hover {
   background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
   border: 1px solid #c6c6c6;
@@ -165,6 +200,7 @@ button:hover {
   color: #222;
 }
 
+/* Styles articles with font size, flex properties, and top margin */
 article {
   font-size: 13px;
   display: flex;
@@ -175,29 +211,26 @@ article {
   margin-top: 14px;
 }
 
+/* Styles links within articles with no text decoration and a specific color */
 article a {
   text-decoration: none;
   color: #1a0dab;
 }
 
+/* Adds underline text decoration on link hover within articles */
 article a:hover {
   text-decoration: underline;
 }
 
+/* Media query for screens with max width of 648px, adjusting dimensions and padding for input wrapper, position of dropdown app, and font size of articles */
 @media screen and (max-width: 648px) {
   #input-wrapper {
     width: 318px;
     padding: 2px;
   }
 
-  #input-wrapper .mic-img img:nth-child(1) {
-    margin-left: 16px;
-    margin-right: 0;
-  }
-
-  #input-wrapper .mic-img img:nth-child(2) {
-    margin-left: 16px;
-    margin-right: 0;
+  #dropdown-app {
+    right: 30px;
   }
 
   article {
