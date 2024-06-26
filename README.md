@@ -1,1 +1,1 @@
-A clone of Google's homepage using HTML and CSS would consist of a minimalist design featuring a central search bar with rounded edges, a simple logo above it, and aligned buttons below, all centered on a plain white background.
+Solution to clone of Google's homepage using HTML and CSS would consist of a minimalist design featuring a central search bar with rounded edges, a simple logo above it, and aligned buttons below, all centered on a plain white background.
