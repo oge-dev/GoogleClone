@@ -100,7 +100,7 @@ nav {
 
 /* Styles the main container to fill the viewport height and center its content */
 main {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   flex-direction: column;
